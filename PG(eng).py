@@ -1,6 +1,5 @@
 import Uni
-import math
-import polynoms
+from polynoms import genF
 
 global n,k,v,d,s
 
@@ -12,7 +11,7 @@ Uni.n=Uni.p**Uni.l
 npol = 0
 if Uni.l == 1:
     npol = 1
-Uni.f=polynoms.genF()[1][npol]
+Uni.f=genF()[1][npol]
 x = [0,1,0]
 n=Uni.n
 d=Uni.d+1
